@@ -2,14 +2,20 @@ class PessoaFisicaControllers {
     constructor( ) {
         let $ = document.querySelector.bind(document);
         
-        this.inputNome = $("#inputName");
-        this.inputEmail = $("#inputEmail");
-        this.inputTel = $("#inputTel");
+        this._inputNome = $("#inputName");
+        this._inputEmail = $("#inputEmail");
+        this._inputTel = $("#inputTel");
     }
     
      adiciona(event) {
         event.preventDefault( );
+        
+        let pessoaFisica = new PessoaFisica (
+                this._inputNome.value,
+                this._inputEmail.value,
+                this._inputTel.value
+        );
 
-        alert(this.inputNome.value);
+        console.log(pessoaFisica);
      }
 }

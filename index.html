@@ -9,19 +9,22 @@
                   <div class="form-group">
                       <div class="form-group">
                           <label for="exampleInputEmail1">Nome</label>
-                          <input class="form-control" id="exampleInputEmail1 inputNome"  aria-describedby="emailHelp" placeholder="Nome">
+                          <input class="form-control" id="inputNome"  aria-describedby="emailHelp" placeholder="Nome">
                         </div>
                           <label for="exampleInputEmail1">Endereço de email</label>
-                          <input type="email" class="form-control" id="exampleInputEmail1 inputEmail" aria-describedby="emailHelp" placeholder="Email">
+                          <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Email">
                         </div>
                         <div class="form-group">
                           <label for="exampleInputPassword1">Telefone</label>
-                          <input type="tel" class="form-control" id="exampleInputPassword1 inputTel" placeholder="Telefone">
+                          <input type="tel" class="form-control" id="inputTel" placeholder="Telefone">
                         </div>
-                        <button type="submit"  onsubmit="PessoaFisicaControllers.adiciona(event)" class="btn btn-primary" >avançar</button>
+                        <button type="submit"  class="btn btn-primary" >avançar</button>
                 </form>
         </div>
             <script src="js/Models/PessoaFisica.js"></script>
             <script src="js/Controllers/PessoaFisicaControllers.js"></script>
+            <script>
+               let pessoaFisica = new PessoaFisica();
+            </script>
     </body>
 </html>
